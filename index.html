@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency converter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript" src="function.js"></script>
+	
+</head>
+<body onload="load(),tellFortune()" >
+
+
+
+
+
+
+
+<!-- Currency converter -->
+	<section class="container converter_wrapper">
+
+		<h1 class="text-uppercase text-center">Welcome to the currency exchange</h1>
+		<h3 class=" text-center">The currency rate is giver below. For your convenience, we have developed a currency converter. Let's taste it.</h3>
+		<div class="row ">
+			<div class="col-md-6 col-sm-8 col-xs-12 table_content">
+				<table class="table table-bordered table-inverse">
+				  <thead>
+				    <tr>
+				      <th></th>
+				      <th>USD</th>
+				      <th>GBP</th>
+				      <th>CAD</th>
+				      <th>EUR</th>
+				      <th>AUD</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">USA</th>
+				      <td>1</td>
+				      <td>2.03032</td>
+				      <td>1.01941</td>
+				      <td>1.41544</td>
+				      <td>0.88297</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">UK</th>
+				      <td>0.49246</td>
+				      <td>1</td>
+				      <td>0.50221</td>
+				      <td>0.69714</td>
+				      <td>0.43497</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Canada</th>
+				      <td>0.98054</td>
+				      <td>1.99169</td>
+				      <td>1</td>
+				      <td>1.38814</td>
+				      <td>0.86613</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Kosovo</th>
+				      <td>0.70641</td>
+				      <td>1.43448</td>
+				      <td>0.72037</td>
+				      <td>1</td>
+				      <td>0.62382</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Australia</th>
+				      <td>1.13262</td>
+				      <td>2.29964</td>
+				      <td>1.15498</td>
+				      <td>1.60329</td>
+				      <td>1</td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+			<div class="col-md-5 col-sm-8 col-xs-12 ml-auto converter_section">
+				<form>
+				  <div class="form-group">
+				    <label for="GBP"> GBP </label>
+				    <input type="number" class="form-control" id="GBP" name="gbp" value="0" onchange="gbpConvert()" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="USD"> USD </label>
+				    <input type="number" class="form-control" id="USD" name="usd" value="0" onchange="usdConvert()" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="EUR"> EUR </label>
+				    <input type="number" class="form-control" id="EUR" name="eur" value="0" onchange="eurConvert()" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="CAD"> CAD </label>
+				    <input type="number" class="form-control" id="CAD" name="cad" value="0" onchange="cadConvert()" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="AUD"> AUD </label>
+				    <input type="number" class="form-control" id="AUD" name="aud" value="0" onchange="audConvert()" placeholder="">
+				  </div>
+				  <button class="btn btn-block btn-lg button">Convert</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+<!-- Fortune generator -->
+	<section class="container fortune_section">
+	  <div class="row justify-content-md-center">
+	  	<div class="col-auto">
+	  		<h3 id="fortune"></h3>
+	  	</div>
+	  </div>  
+	</section>
+
+
+
+</body>
+</html>

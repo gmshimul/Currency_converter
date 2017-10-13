@@ -1,0 +1,79 @@
+
+@keyframes example {
+   
+    0%  {border-top-color: crimson; border-top-width: 3px;}
+    40%  {border-right-color: crimson; border-right-width: 3px;}
+    75%  {border-bottom-color: crimson; border-bottom-width: 3px;}
+    100% {border-left-color: crimson; border-left-width: 3px;}
+}
+
+body{
+	background: #E3FDFF;
+}
+.converter_wrapper h3{
+	margin: 40px 0;
+	color: crimson;
+}
+.converter_wrapper{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.converter_section{
+	border: 1px solid greenyellow;
+    background: #1ABC9C;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 3px 3px 20px 8px lightgrey;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.button{
+	background: #1ABC9C;
+	color: #fff;
+	border: 1px solid white;
+	border-radius: 50px;
+	/*transform: translateY(112%);*/
+	transition: all 1s;
+	text-transform: uppercase;
+	font-weight: bolder;
+	cursor: pointer;
+
+}
+
+.button:hover{
+	background: #fff;
+	color: #1ABC9C;
+	border:1px solid greenyellow;
+	transform: translateY(20%);
+}
+
+label{
+	color: white;
+}
+
+.table_content{
+	margin: 80px 0;
+}
+
+
+
+
+.fortune_section
+{
+  /*border: 2px dotted white;
+  background-color:orchid;*/
+  margin-top: 50px;
+  padding: 10px;
+}
+
+#fortune
+{
+  border: 2px dotted lime;
+  background-color: #EEEEEE;
+  padding: 20px;
+  animation: example 4s ease-out 0.25s infinite;
+  /*animation-name: example;
+  animation-duration: 4s;*/
+}
+
